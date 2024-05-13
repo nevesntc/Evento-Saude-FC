@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação do Palestrante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Estilos gerais */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da viewport */
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos do conteúdo */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-grow: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .circle img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .description {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            margin-left: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .description h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .description p {
+            margin-bottom: 10px;
+        }
+
+        .area p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos dos comentários */
+        .comments {
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .comment img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .comment p {
+            margin-bottom: 5px;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Mantém o rodapé no final da viewport */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Palestrante</h1>
+    </header>
+
+    <div class="container">
+        {% for palestrante in Palestrante %}
+        <div class="circle">
+            <img src="{{ palestrante.imagem }}" alt="">
+        </div>
+        <div class="description">
+            <h2>{{ palestrante.nome }}</h2>
+            <p>{{ palestrante.biografia }}</p>
+            <div class="area">
+                <p>{{ palestrante.area }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="comments">
+        <h2>Comentários:</h2>
+        <div id="commentList">
+            <div class="comment">
+                <img src="{{ url_for('static', filename='img/speakers/vitorpereira.jpg') }}" alt="">
+                <p><strong>Vitor Pereira:</strong> Ora pois,Uma verdadeira lufada de ar fresco, a palestra deste orador foi simplesmente magnífica! </p>
+            </div>
+            <div class="comment">
+                <img src="{{ url_for('static', filename='img/speakers/chico.jpg') }}" alt="">
+                <p><strong>Chico Moedas</strong> Eu tentei! Eu tentei não gostar deste palestrante, mas ele é incrível. Sensacional</p>
+            </div>
+            <div class="comment">
+                <img src="{{ url_for('static', filename='img/speakers/casagrande.jpeg') }}" alt="">
+                <p><strong>Walter Casagrande</strong> Oh meu, que palestrante sensacional. Muito conhecimento sobre saúde.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024 - Bruno Neves</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Saúde FC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nice-select.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area ">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center justify-content-between no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="{{ url_for('index') }}">Inicio</a></li>
+                                        <li><a href="{{ url_for('contato') }}">Detalhes</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                            <div class="buy_ticket">
+                                <a href="#" class="boxed-btn-white">Ingressos</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area slider_bg_1">
+        <div class="slider_text">
+            <div class="container">
+                <div class="position_relv">
+                    <h1 class="opcity_text d-none d-lg-block">Resenha</h1>
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="title_text">
+                                <h3>Saúde Mental<br>
+                                    e Fisiologia Esportiva <br>
+                                </h3>
+                                <a href="#" class="boxed-btn-white">Adicione ao seu Calendário</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="countDOwn_area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="single_date">
+                            <i class="ti-location-pin"></i>
+                            <span>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="single_date">
+                            <i class="ti-alarm-clock"></i>
+                            <span>17-19 Maio</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-md-12 col-lg-5">
+                        <span id="clock"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- about_area_start -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-md-6">
+                    <div class="about_thumb">
+                        <img src="{{ url_for('static', filename='img/speakers/abelferreira.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-md-6">
+                    <div class="about_info">
+                        <div class="section_title">
+                            <span class="sub_heading">Bem vindo à</span>
+                            <h3>Maior Palestra <br>
+                                Esportiva de <br>
+                                2024</h3>
+                        </div>
+                        <p>A ideia é poder mostrar todos os processos na saúde do atleta para conseguir seu alto performace e se sentir bem</p>
+                        <a href="#" class="boxed-btn-red">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about_area_end -->
+
+    <!-- speakers_start -->
+    <div class="speakers_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="serction_title_large mb-95">
+                        <h3>
+                            Palestrantes
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-5 col-md-6">
+                    <div class="single_speaker">
+                        <div class="speaker_thumb">
+                            <img src="{{ url_for('static', filename='img/speakers/marciotannure.jpg') }}" alt="">
+                            <div class="hover_overlay">
+                                <div class="social_icon">
+                                    <a href="https://www.instagram.com/drtannure/"><i class="fa fa-instagram"></i></a>
+                                    <a href="{{ url_for('perfil_palestrante', id=1) }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-minus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                                      </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker_name text-center">
+                            <h3>Dr. Márcio Tannure</h3>
+                            <p>Chefe do Dep. Médico do Flamengo</p>
+                        </div>
+                    </div>
+                    <div class="single_speaker">
+                        <div class="speaker_thumb">
+                            <img src="{{ url_for('static', filename='img/speakers/gabrielbreier.jpg') }}" alt="">
+                            <div class="hover_overlay">
+                                <div class="social_icon">
+                                    <a href="https://www.instagram.com/gabrielbreier._/"><i class="fa fa-instagram"></i></a>
+                                    <a href="{{ url_for('perfil_palestrante', id=2) }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-minus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                                      </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker_name text-center">
+                            <h3>Gabriel Breier</h3>
+                            <p>Psicólogo Esportivo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-2 col-md-6">
+                    <div class="single_speaker">
+                        <div class="speaker_thumb">
+                            <img src="{{ url_for('static', filename='img/speakers/johann.jpg') }}" alt="">
+                            <div class="hover_overlay">
+                                <div class="social_icon">
+                                    <a href="https://www.instagram.com/johannschatztreinador/?hl=pt"><i class="fa fa-instagram"></i></a>
+                                    <a href="{{ url_for('perfil_palestrante', id=3) }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-minus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                                      </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker_name text-center">
+                            <h3>Johann</h3>
+                            <p>Personal Trainer de Alta Performace</p>
+                        </div>
+                    </div>
+                    <div class="single_speaker">
+                        <div class="speaker_thumb">
+                            <img src="{{ url_for('static', filename='img/speakers/renatogaucho.jpg') }}" alt="">
+                            <div class="hover_overlay">
+                                <div class="social_icon">
+                                    <a href="https://www.instagram.com/renatogaucho/"><i class="fa fa-instagram"></i></a>
+                                    <a href="{{ url_for('perfil_palestrante', id=4) }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-minus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                                      </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker_name text-center">
+                            <h3>Renato Portaluppi</h3>
+                            <p>Treinador de Futebol</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- speakers_end-->
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+<footer>
+    <div class="footer-text">
+        <p>&copy; 2024 Detalhes da Sessão. Todos os direitos reservados. Desenvolvido por Bruno Neves</a>.</p>
+    </div>
+</html>
